@@ -12,7 +12,6 @@ Features
 * Separate requirements for dev and production, one pinned and the other
   unpinned
 * Smart Makefile for common tasks
-
 * Error tracking with Sentry/raven
 * REST-y views with Flask-restful
 * Flask-Cache
