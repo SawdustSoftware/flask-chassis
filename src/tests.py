@@ -30,7 +30,7 @@ class TestCat(ChassisTestCase):
         cat = factories.Cat()
         db.session.commit()
 
-        response = self.client.get("/messages/" + str(cat.id))
+        response = self.client.get("/cats/" + str(cat.id))
         self.assert_200(response)
         resp_json = response.json
         self.assertEquals(resp_json["id"], str(cat.id))
