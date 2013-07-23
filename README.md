@@ -21,7 +21,8 @@ Features
 * Flask-SQLAlchemy
 * Tests with unittest, nose, coverage.py
 * Factories with factory\_boy and faker
-* Sphinx docs with sphinx-httpdomain for REST docs
+* Sphinx docs with flask-style theme
+* sphinxcontrib-httpdomain for REST docs
 
 Usage
 -----
