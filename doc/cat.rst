@@ -29,7 +29,7 @@ Fetching a cat is easy::
 REST API Reference
 ------------------
 
-.. autoflask:: chassis({'DEBUG':False})
+.. autoflask:: chassis:create_app({'DEBUG':False})
     :undoc-static:
 
 Python API Reference
