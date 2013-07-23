@@ -18,5 +18,8 @@ pip-log.txt
 .tox
 nosetests.xml
 
+#Sqlite DBs
+*.db
+
 #Docs
 doc/_build/
