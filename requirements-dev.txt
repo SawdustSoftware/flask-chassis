@@ -1,0 +1,11 @@
+flask-debugtoolbar
+flask-testing
+sphinx
+sphinxcontrib-httpdomain
+coverage
+nose
+nose-progressive
+factory-boy
+fake-factory
+ipython
+ipdb
