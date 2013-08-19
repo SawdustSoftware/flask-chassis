@@ -12,7 +12,6 @@ def _make_context():
 manager.add_command("shell", Shell(make_context=_make_context))
 
 
-@manager.command
 @manager.option("-n", help="Number of dummy things")
 def dummy(n=10):
     """Generate dummy data."""
@@ -20,7 +19,7 @@ def dummy(n=10):
         raise Exception("Unsafe to generate dummy data while not in DEBUG.")
 
     ids = []
-    for x in xrange(0, n):
+    for x in xrange(0, int(n)):
         m = factories.Cat()
         ids.append(m.id)
     models.db.session.commit()

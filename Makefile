@@ -6,6 +6,8 @@ ACTIVATE:=$(ENVDIR)/bin/activate
 
 .PHONY:	clean
 
+count=10
+
 requirements = requirements.txt requirements-dev.txt
 virtualenv: $(ACTIVATE)
 $(ACTIVATE): $(requirements)
@@ -25,7 +27,7 @@ shell: virtualenv
 	. $(ACTIVATE); FLASK_CONFIG="../../conf/dev.py" python src/manage.py shell
 
 dummy: virtualenv
-	. $(ACTIVATE); FLASK_CONFIG="../../conf/dev.py" python src/manage.py dummy
+	. $(ACTIVATE); FLASK_CONFIG="../../conf/dev.py" python src/manage.py dummy -n $(count)
 
 docs: virtualenv
 	git submodule update --init
