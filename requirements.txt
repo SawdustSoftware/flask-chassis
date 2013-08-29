@@ -1,7 +1,6 @@
 Flask==0.9
 SQLAlchemy==0.8.1
 flask-sqlalchemy==0.16
-MySQL-python==1.2.4
 raven==3.3.7
 flask-restful==0.2.3
 flask-script==0.6.2
