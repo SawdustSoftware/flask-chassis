@@ -4,6 +4,9 @@ Chassis
 Chassis is a "batteries included" boilerplate flask project to use as a quick
 starting point, especially for REST services.
 
+To see how easy it is to get up and running with Flask and Chassis, check out my 10 minute live coding presentation at the Boston Python group, where I write a backend for a backbone.js TODO app: https://github.com/malicustommade/chassis-backbonetodo 
+
+
 Features
 --------
 
